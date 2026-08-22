@@ -9,7 +9,8 @@ LOGIN_ACCOUNT_BUTTON = (By.XPATH, "//button[text()='Войти в аккаунт
 # Регистрация и восстановление пароля
 REGISTER_LINK = (By.CSS_SELECTOR, "a[href='/register']") # Ссылка зарегистрироваться
 FORGOT_PASSWORD_LINK = (By.CSS_SELECTOR, "a[href='/forgot-password']") # Ссылка восстановления пароля
-
+REGISTER_NAME_INPUT = (By.XPATH, "//label[text()='Имя']/following-sibling::input") #форма регистрации
+REGISTER_EMAIL_INPUT = (By.XPATH, "//label[text()='Email']/following-sibling::input") #форма регистрации
 # header сайта
 PERSONAL_ACCOUNT_LINK = (By.CSS_SELECTOR, "a[href='/account']") # ссылка на личный кабинет
 CONSTRUCTOR_LINK = (By.XPATH, "//p[text()='Конструктор']") # Конструктор
