@@ -7,7 +7,7 @@ from locators import (REGISTER_NAME_INPUT,
                       PASSWORD_ERROR)
 
 BASE_URL = "https://stellarburgers.education-services.ru"
-
+# Регистрация
 def test_successful_registration(driver, user_credentials):
     driver.get(f"{BASE_URL}/register")
 
@@ -22,7 +22,7 @@ def test_successful_registration(driver, user_credentials):
     )
     assert driver.current_url == f"{BASE_URL}/login"
 
-
+# Некорректный пароль
 def test_registration_with_incorrect_passwort(driver, user_credentials):
     driver.get(f"{BASE_URL}/register")
 
