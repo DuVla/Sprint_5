@@ -1,0 +1,16 @@
+# Виртуальное окружение
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# Python кэш
+__pycache__/
+*.pyc
+
+# pytest
+.pytest_cache/
+
+# Логи, если будут
+*.log
