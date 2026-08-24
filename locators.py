@@ -12,6 +12,8 @@ FORGOT_PASSWORD_LINK = (By.CSS_SELECTOR, "a[href='/forgot-password']") # Ссы�
 REGISTER_NAME_INPUT = (By.XPATH, "//label[text()='Имя']/following-sibling::input") #форма регистрации
 REGISTER_EMAIL_INPUT = (By.XPATH, "//label[text()='Email']/following-sibling::input") #форма регистрации
 PASSWORD_ERROR = (By. CLASS_NAME, "input__error") # текст ошибки при некорректном пароле
+REGISTER_BUTTON = (By.XPATH, "//button[text()='Зарегистрироваться']")
+REGISTRATION_TITLE = (By.XPATH, "//h2[text()='Регистрация']")
 # header сайта
 PERSONAL_ACCOUNT_LINK = (By.CSS_SELECTOR, "a[href='/account']") # ссылка на личный кабинет
 CONSTRUCTOR_LINK = (By.XPATH, "//p[text()='Конструктор']") # Конструктор
@@ -24,4 +26,6 @@ LOGOUT_BUTTON = (By.XPATH, "//button[text()='Выход']") # кнопка вы�
 BUNS = (By.XPATH, "//span[text()='Булки']")
 SAUCES = (By.XPATH, "//span[text()='Соусы']")
 FILLINGS = (By.XPATH, "//span[text()='Начинки']")
-
+BUNS_CONTAINER = (By.XPATH, "//span[text()='Булки']/..")
+SAUCES_CONTAINER = (By.XPATH, "//span[text()='Соусы']/..")
+FILLINGS_CONTAINER = (By.XPATH, "//span[text()='Начинки']/..")
